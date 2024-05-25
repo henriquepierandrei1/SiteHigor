@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<script src="https://kit.fontawesome.com/0562e2582a.js" crossorigin="anonymous"></script>
+<body style="background-color: rgb(228, 228, 252);">
+    <header>
+        <div id="menuham"><img src="menu.png" alt="menu" style="width: 5%;"></div>
+        <img src="mover.png" alt="mover" style="width: 1%;">
+        <div id="div1">
+            <span id="span1" style="padding: 8px;background-color: rgb(0, 47, 255);">VER SITE</span>
+            <span id="span2" style="padding: 8px;width: 40%;">SAIR</span>
+        </div>
+    </header>
+    <section>
+        <h1>Cota premiada</h1>
+        <div id="input1" style="display: flex;align-items: center;">
+            <p style="margin-top: 15px;">XRE 300 Rally 2023 ou 25Mil no Pix</p>
+        </div>
+    </section>
+    <section id="sectionbox">
+        <div id="box1">
+            <div id="boximagem"><img src="foto.jpg" alt="fotomoto" id="foto" style="width: 95%;"></div>
+            <div id="interacao">
+                <input type="text" id="inputreal" placeholder="   Buscar Cota Premiada" style="height: 30%;">
+                <button type="button" onclick="exibir()" style="background-color: rgb(30, 192, 233);"><img src="lupa.png" alt="lupa" style="width: 10%; padding-right: 5px;">Buscar </button>
+                <div id="carregamento">
+                    <img src="loading1.gif" alt="loading1">
+                </div>
+            </div>
+            <div id="resultado" style="text-align: center;display: flex;align-items: center;">
+                <h4 style="text-wrap: nowrap;font-size: 1.7em;text-align: center;font-weight: bold;color: rgb(39, 39, 39);">Ganhador: (32) 998201832</h4 style="text-wrap: nowrap;">
+                <a href="https://wa.me/5532998201832?text=Parab%C3%A9ns%2C+voc%C3%AA+%C3%A9+o+vencedor+da+Rifa+Lili+Premia%C3%A7%C3%B5es%21" target="_blank" rel="noopener noreferrer" style="color: white;text-decoration: none;text-align: center;padding: 10px;"><i class="fa-brands fa-whatsapp" style="color: #ffffff;margin-right: 5px;"></i>Entrar em contato</a>
+            </div>
+        </div>
+        
+    </section>
+    <script>
+        // Função para exibir a div quando o botão for clicado
+        function exibir() {
+            // Esconde o resultado inicialmente
+            document.getElementById("resultado").style.display = "none";
+    
+            // Exibe o GIF de carregamento
+            document.getElementById("carregamento").style.display = "block";
+    
+            // Define um atraso de 2 segundos antes de exibir o resultado
+            setTimeout(function() {
+                // Esconde o GIF de carregamento após 1 segundo
+                document.getElementById("carregamento").style.display = "none";
+    
+                // Exibe o resultado
+                document.getElementById("resultado").style.display = "flex";
+            }, 500); // 2000 milissegundos = 2 segundos
+        }
+    </script>
+    <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
